@@ -45,8 +45,8 @@ defmodule CrucibleKitchen.Context do
   ]
 
   @type adapter_map :: %{
-          training_client: module(),
-          dataset_store: module(),
+          required(:training_client) => module(),
+          required(:dataset_store) => module(),
           optional(:blob_store) => module(),
           optional(:hub_client) => module(),
           optional(:metrics_store) => module(),
