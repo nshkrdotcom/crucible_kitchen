@@ -10,7 +10,7 @@ defmodule CrucibleKitchen.Ports do
   ```
   CrucibleTrain.Ports.TrainingClient     <- Behaviour (what adapters implement)
           │
-          ├── TinkexCookbook.Adapters.TrainingClient.Tinkex  <- Real impl
+          ├── CrucibleKitchen.Adapters.Tinkex.TrainingClient <- Real impl
           ├── CrucibleKitchen.Adapters.Noop.TrainingClient   <- Test impl
           └── YourApp.Adapters.TrainingClient                <- Your impl
   ```

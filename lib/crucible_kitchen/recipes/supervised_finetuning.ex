@@ -24,7 +24,7 @@ defmodule CrucibleKitchen.Recipes.SupervisedFineTuning do
   ## Example
 
       adapters = %{
-        training_client: {TinkexCookbook.Adapters.TrainingClient, api_key: "..."},
+        training_client: {CrucibleKitchen.Adapters.Tinkex.TrainingClient, api_key: "..."},
         dataset_store: MyApp.Adapters.LocalDataset
       }
 
